@@ -1,4 +1,4 @@
-# Meltdown Proof-of-Concept
+ Meltdown Proof-of-Concept
 
 This repository contains several applications, demonstrating the [Meltdown bug](https://meltdown.help). For technical information about the bug, refer to the paper: <br>
 这个存储库包含多个应用程序，演示了[崩溃错误](https://meltdown.help).。有关bug的技术信息，请参阅论文。
@@ -84,14 +84,16 @@ then the basic demo works.
 
 Starting with Linux kernel 4.12, KASLR (Kernel Address Space Layout Randomizaton) is active by default.  This means, that the location of the kernel (and also the direct physical map which maps the entire physical memory) changes with each reboot.
 
-This demo uses Meltdown to leak the (secret) randomization of the direct physical map. This demo requires root privileges to speed up the process. The paper describes a variant which does not require root privileges. 
-
+This demo uses Meltdown to leak the (secret) randomization of the direct physical map. This demo requires root privileges to speed up the process. The paper describes a variant which does not require root privileges.<br>
+这个demo使用功能meltdown 来泄露随机的物理映射。这个demo要求有root权限，文本描述了不需要权限的而一个变体
+<br>
 #### Build and Run
 
 ```bash
 make
 sudo taskset 0x1 ./kaslr
 ```
+这个感觉mac上不行
 
 After a few seconds, you should see something similar to this
 ```
@@ -239,3 +241,5 @@ You should get a hexdump of parts of the memory (potentially even containing sec
 **Warning #2**: If you find that a computer is susceptible to the Meltdown bug, you may want to avoid using it as a multi-user system. Meltdown breaches the CPU's memory protection. On a machine that is susceptible to the Meltdown bug, one process can read all pages used by other processes or by the kernel.
 
 **Warning #3**: This code is only for testing purposes. Do not run it on any productive systems. Do not run it on any system that might be used by another person or entity.
+
+！ 这里的代码当前只是使用在linux上面，有关的内容查询以及使用都是在linux系统下面的；
