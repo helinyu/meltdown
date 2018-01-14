@@ -1,16 +1,21 @@
 # Meltdown Proof-of-Concept
 
-This repository contains several applications, demonstrating the [Meltdown bug](https://meltdown.help). For technical information about the bug, refer to the paper: 
+This repository contains several applications, demonstrating the [Meltdown bug](https://meltdown.help). For technical information about the bug, refer to the paper: <br>
+这个存储库包含多个应用程序，演示了[崩溃错误](https://meltdown.help).。有关bug的技术信息，请参阅论文。
+
 
 * [Meltdown](https://meltdown.help/meltdown.pdf) by Lipp, Schwarz, Gruss, Prescher, Haas, Mangard, Kocher, Genkin, Yarom, and Hamburg
 
-The applications in this repository are built with [libkdump](https://github.com/IAIK/Meltdown/tree/master/libkdump), a library we developed for the paper. This library simplifies exploitation of the bug by automatically adapting to certain properties of the environment. 
+The applications in this repository are built with [libkdump](https://github.com/IAIK/Meltdown/tree/master/libkdump), a library we developed for the paper. This library simplifies exploitation of the bug by automatically adapting to certain properties of the environment. <br>
+这个应用建立与libkdump ，一个库我们开发给给分页（这里应该值得是分页），这个库简单的暴露一些些bug通过自动获取环境的属性；
 
 ## Videos
-
+<br>
+    下面视频是一些meltdown的样例
+<br>
 This repository contains several videos demonstrating Meltdown
 
- * [Video #1](https://cdn.rawgit.com/IAIK/meltdown/master/videos/spy.mp4) shows how Meltdown can be used to spy in realtime on a password input. 
+* [Video #1](https://cdn.rawgit.com/IAIK/meltdown/master/videos/spy.mp4) shows how Meltdown can be used to spy in realtime on a password input. 演示了如何在密码输入中实时地使用“崩溃”进行监视。<br>
  * [Video #2](https://cdn.rawgit.com/IAIK/meltdown/master/videos/memdump.mp4) shows how Meltdown leaks physical memory content. 
  * [Video #3](https://cdn.rawgit.com/IAIK/meltdown/master/videos/cat1.mp4) shows how Meltdown reconstructs a photo from memory. 
  * [Video #4](https://cdn.rawgit.com/IAIK/meltdown/master/videos/cat2.mp4) shows how Meltdown reconstructs a photo from memory which is encoded with the FLIF file format. 

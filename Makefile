@@ -12,7 +12,7 @@ libkdump/libkdump.a:
 	make -C libkdump
 
 %: %.c libkdump/libkdump.a
-	$(CC) $< -o $@ -Llibkdump -Ilibkdump -lkdump -static $(CFLAGS)
+	$(CC) $< -o $@ -Llibkdump -Ilibkdump -lkdump $(CFLAGS)
 	
 	
 clean:
