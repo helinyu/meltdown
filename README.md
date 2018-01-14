@@ -16,10 +16,19 @@ The applications in this repository are built with [libkdump](https://github.com
 This repository contains several videos demonstrating Meltdown
 
 * [Video #1](https://cdn.rawgit.com/IAIK/meltdown/master/videos/spy.mp4) shows how Meltdown can be used to spy in realtime on a password input. 演示了如何在密码输入中实时地使用“崩溃”进行监视。<br>
- * [Video #2](https://cdn.rawgit.com/IAIK/meltdown/master/videos/memdump.mp4) shows how Meltdown leaks physical memory content. 
- * [Video #3](https://cdn.rawgit.com/IAIK/meltdown/master/videos/cat1.mp4) shows how Meltdown reconstructs a photo from memory. 
- * [Video #4](https://cdn.rawgit.com/IAIK/meltdown/master/videos/cat2.mp4) shows how Meltdown reconstructs a photo from memory which is encoded with the FLIF file format. 
+ * [Video #2](https://cdn.rawgit.com/IAIK/meltdown/master/videos/memdump.mp4) shows how Meltdown leaks physical memory content.
+ 显示了泄漏如何泄漏物理内存内容。
+<br>
+
+ * [Video #3](https://cdn.rawgit.com/IAIK/meltdown/master/videos/cat1.mp4) shows how Meltdown reconstructs a photo from memory.
+ 展示了meltdown是如何从内存中重建照片的。
+ <br>
+ * [Video #4](https://cdn.rawgit.com/IAIK/meltdown/master/videos/cat2.mp4) shows how Meltdown reconstructs a photo from memory which is encoded with the FLIF file format.
+  展示了meltdown是如何从内存中重建照片的,它是 FLIF 格式编码
+  <br>
  * [Video #5](https://cdn.rawgit.com/IAIK/meltdown/master/videos/uncached.mp4) shows how Meltdown leaks uncached memory. 
+显示如何崩溃被内存泄漏。
+<br>
 
 ## Demos
 
