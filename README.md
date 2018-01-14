@@ -27,12 +27,14 @@ This repository contains several videos demonstrating Meltdown
   展示了meltdown是如何从内存中重建照片的,它是 FLIF 格式编码
   <br>
  * [Video #5](https://cdn.rawgit.com/IAIK/meltdown/master/videos/uncached.mp4) shows how Meltdown leaks uncached memory. 
-显示如何崩溃被内存泄漏。
+显示如何崩溃内存泄漏。
 <br>
 
 ## Demos
-
-This repository contains five demos to demonstrate different use cases. All demos are tested on Ubuntu 16.04 with an Intel Core i7-6700K, but they should work on any Linux system with any modern Intel CPU since 2010. 
+<br>
+[√] 下面的demo是在Ubuntu上进行测试的， 【这里是对编译的系统等要求】
+<br>
+This repository contains five demos to demonstrate different use cases. All demos are tested on Ubuntu 16.04 with an Intel Core i7-6700K, but they should work on any Linux system with any modern Intel CPU since 2010.
 
 For best results, we recommend a fast CPU that supports Intel TSX (e.g. any Intel Core i7-5xxx, i7-6xxx, or i7-7xxx). 
 Furthermore, every demo should be pinned to one CPU core, e.g. with taskset.
@@ -44,6 +46,9 @@ For RPM-based systems:
 ```
 sudo yum install -y glibc-static
 ```
+<br>
+在mac上不需要安装这个库，因为mac上基本上都是动态加载库，原项目中有抵触这个问题；
+<br>
 
 ### Demo #1: A first test (`test`)
 
@@ -56,6 +61,15 @@ If this demo does not work for you, the remaining demos most likely won't work e
 ```bash
 make
 taskset 0x1 ./test
+```
+
+<br>
+mac上的操作
+<br>
+
+```
+make // 编译 <br>
+./test // 直接执行编译好的程序
 ```
 
 If you see an output similar to this
